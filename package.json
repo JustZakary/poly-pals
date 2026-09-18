@@ -4,8 +4,27 @@
   "description": "Generate polygon avatars",
   "license": "ISC",
   "author": "JustZakary",
+  "homepage": "https://www.npmjs.com/package/poly-pals",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustZakary/poly-pals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JustZakary/poly-pals/issues"
+  },
+  "keywords": [
+    "avatar",
+    "svg",
+    "polygon",
+    "generator",
+    "identicon",
+    "seeded"
+  ],
   "type": "commonjs",
   "main": "index.js",
+  "bin": {
+    "poly-pals": "cli.js"
+  },
   "browser": "./lib.js",
   "exports": {
     ".": {
