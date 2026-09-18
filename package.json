@@ -1,0 +1,21 @@
+{
+  "name": "poly-pals",
+  "version": "1.0.0",
+  "description": "Generate polygon avatars",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "shape_generator.js",
+    "cli.js"
+  ],
+  "scripts": {
+    "generate": "node cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
