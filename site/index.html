@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poly Pals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container py-4" style="max-width: 36rem">
+      <h1 class="h3 mb-4">Poly Pals</h1>
+
+      <section class="text-center mb-4">
+        <div id="preview" class="preview" aria-live="polite"></div>
+        <button id="download" class="btn btn-primary mt-3" type="button" disabled>
+          Download SVG
+        </button>
+      </section>
+
+      <div class="mb-3">
+        <label class="form-label" for="displayname">Display name</label>
+        <input
+          id="displayname"
+          class="form-control"
+          type="text"
+          autocomplete="off"
+          placeholder="Used as the random seed" />
+      </div>
+
+      <div class="form-check mb-3">
+        <input id="shadow" class="form-check-input" type="checkbox" checked />
+        <label class="form-check-label" for="shadow">Shadow</label>
+      </div>
+
+      <div class="mb-4">
+        <label class="form-label" for="size">Size</label>
+        <input id="size" class="form-control" type="number" min="1" step="1" />
+      </div>
+
+      <h2 class="h6">Use with current settings</h2>
+      <pre class="usage mb-0"><code id="usage"></code></pre>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script src="bundle.js"></script>
+  </body>
+</html>

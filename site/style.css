@@ -1,0 +1,28 @@
+.preview {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+}
+
+.preview svg {
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.usage {
+  padding: 1rem;
+  background: #212529;
+  color: #f8f9fa;
+  border-radius: 0.375rem;
+  overflow-x: auto;
+}
+
+.usage code {
+  color: inherit;
+}

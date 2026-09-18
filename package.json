@@ -3,19 +3,29 @@
   "version": "1.0.0",
   "description": "Generate polygon avatars",
   "license": "ISC",
-  "author": "",
+  "author": "JustZakary",
   "type": "commonjs",
   "main": "index.js",
+  "browser": "./lib.js",
   "exports": {
-    ".": "./index.js"
+    ".": {
+      "browser": "./lib.js",
+      "default": "./index.js"
+    }
   },
   "files": [
     "index.js",
+    "lib.js",
     "shape_generator.js",
     "cli.js"
   ],
   "scripts": {
     "generate": "node cli.js",
+    "build:site": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3"
   }
 }
