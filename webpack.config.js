@@ -4,10 +4,10 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './site/scripts.js',
+  entry: './docs/scripts.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'site'),
+    path: path.resolve(__dirname, 'docs'),
     clean: false,
   },
   resolve: {

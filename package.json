@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "generate": "node cli.js",
-    "build:site": "webpack",
+    "build:docs": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
